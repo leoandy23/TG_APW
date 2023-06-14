@@ -1,0 +1,314 @@
+/******Variables CSS ******/
+
+:root {
+  --color-primary: #a3a656;
+  --color-secondary: #384001;
+  --color-tertiary: #ffefdf;
+  --color-quaternary: #f2f6f6;
+  --color-header-hover: #ffff00;
+}
+/* *****Fuentes******/
+@font-face {
+  font-family: "Inter"; /* Nombre de la fuente */
+  src: url("../fonts/Inter-Regular.ttf") format("truetype"); /* Ruta relativa al archivo TTF */
+}
+
+@font-face {
+  font-family: "Romanesco";
+  src: url("../fonts/Romanesco-Regular.ttf") format("truetype");
+}
+
+/******Reset******/
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Inter";
+  font-size: 16px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+/****** Menu ******/
+.header {
+  position: relative;
+  background-color: var(--color-primary);
+  color: #000;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+}
+
+.menu-list {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0 70px;
+}
+
+.menu-item {
+  display: inline-block;
+}
+
+.menu-link {
+  display: block;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.menu-link:hover {
+  color: var(--color-header-hover);
+}
+
+/****** Opciones de lenguaje ******/
+.account-lan {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.account-lan * {
+  padding-right: 15px;
+}
+
+.account-lan a:hover {
+  color: var(--color-header-hover);
+}
+
+/* ****Hero Image **** */
+
+.hero-image {
+  width: 100%;
+  height: 667px;
+  text-align: left;
+  background-image: url("../images/main.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-content {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+}
+
+.hero-title {
+  font-family: "Romanesco";
+  font-size: 96px;
+  margin-bottom: 50px;
+}
+
+.hero-message {
+  font-weight: 600;
+  font-size: 32px;
+}
+
+/******Barra de busqueda*****/
+
+.search-bar {
+  width: 100%;
+  height: 100px;
+  background-color: var(--color-quaternary);
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  height: 50px;
+  border-radius: 1rem;
+  border: none;
+}
+
+.search-bar-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar-input {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.search-bar input::placeholder {
+  font-family: "Inter";
+  font-size: 16px;
+  padding-left: 15px;
+  color: #9e9a9a;
+}
+
+/* ***** Cards Products ***** */
+
+.cards-container {
+  padding-top: 100px;
+  display: flex;
+  width: 100%;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.card {
+  width: 350px;
+  margin-left: 67px;
+  margin-right: 67px;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px 15px 0 0;
+  height: 50px;
+  background-color: var(--color-primary);
+  color: #fff;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.card img {
+  width: 100%;
+  object-position: center;
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-price,
+.card-price-btn {
+  padding: 10px 20px;
+  margin: 20px;
+}
+.card-price-btn {
+  background-color: var(--color-primary);
+  border-radius: 35px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.card-price-btn:hover {
+  background-color: var(--color-secondary);
+}
+
+/******Cards clasificaciones******/
+
+.cards-class-container {
+  width: 100%;
+  height: 770px;
+  background-color: var(--color-quaternary);
+  text-align: center;
+}
+.cards-class-content {
+  margin-top: 75px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+.cards-class-title {
+  padding-top: 50px;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.card-class {
+  width: 255px;
+}
+
+.card-class-img {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 255px;
+  height: 255px;
+  border: 11px solid var(--color-secondary);
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-class-btn {
+  width: 100%;
+  text-align: center;
+  border-radius: 35px;
+  background-color: var(--color-primary);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.card-class-btn:hover {
+  background-color: var(--color-secondary);
+}
+
+.card-class-list {
+  text-align: left;
+}
+.card-class-list ul {
+  padding-left: 30px;
+  list-style-position: inside;
+}
+
+/* *****Footer***** */
+
+.footer {
+  width: 100%;
+  height: 97px;
+  background-color: var(--color-secondary);
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.footer-list {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  padding-left: 70px;
+  width: 75%;
+}
+
+.footer-list-link {
+  color: var(--color-primary);
+  padding-right: 50px;
+}
+
+.footer-list-link:hover,
+.footer-social:hover {
+  color: var(--color-header-hover);
+}
+
+.footer-social {
+  width: 25%;
+  display: flex;
+  color: var(--color-primary);
+  align-items: center;
+  justify-content: space-evenly;
+}
